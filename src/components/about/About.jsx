@@ -1,7 +1,7 @@
 import React from 'react';
 import "./about.css"; // Import the CSS file for styling
-import AboutImg from "../../assets/demo00.jpeg"; // Import the image for the about section
-import CV from "/Users/shashankbr/Downloads/portfolio/src/assets/shash_resume.pdf"; // Import the CV file for download
+import AboutImg from "/Users/shashankbr/Downloads/All_Projects/portfolio/src/assets/my_data/demo00.jpeg"; // Import the image for the about section
+import CV from "/Users/shashankbr/Downloads/All_Projects/portfolio/src/assets/my_data/shash_resume.pdf"; // Import the CV file for download
 import Info from './Info'; // Import the Info component
 
 const About = () => {
@@ -10,7 +10,7 @@ const About = () => {
         <h2 className='section__title'> About me </h2> {/* Section title */}
         <span className='section__subtitle'> My Introduction </span> {/* Section subtitle */}
         <div className='about__container container grid'> {/* Container for about section content */}
-            <img src={AboutImg} alt='' className='about__img'></img> {/* Display about image */}
+            <img src={AboutImg} alt='img not available' className='about__img'></img> {/* Display about image */}
             <div className='about__data'> {/* Container for about text and Info component */}
             <Info/> {/* Render the Info component */}
             <p className='about__description'> {/* Description paragraph */}

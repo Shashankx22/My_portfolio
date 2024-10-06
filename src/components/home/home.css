@@ -64,7 +64,7 @@
 
 /* Styling for the profile image */
 .home__img {
-  background: url(/Users/shashankbr/Downloads/portfolio/src/assets/demo00.jpeg); /* Background image */
+  background: url(/Users/shashankbr/Downloads/All_Projects/portfolio/src/assets/my_data/demo00.jpeg); /* Background image */
   background-repeat: no-repeat; /* Prevent repeating of the image */
   background-position: center; /* Center the image */
   background-size: cover; /* Cover the area with the image */

@@ -40,3 +40,7 @@ yarn.lock
 # editor settings
 .vscode/
 .idea/
+
+#icon
+/Users/shashankbr/Downloads/All_Projects/portfolio/public/shash.ico
+/Users/shashankbr/Downloads/All_Projects/portfolio/src/assets/my_data
