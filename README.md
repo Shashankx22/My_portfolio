@@ -58,8 +58,8 @@ This is a personal portfolio website built using React.js. It showcases my proje
     │       └── skills.css       # Styles for Skills section
     └── index.js                 # Entry point for the React app
 ```
-##How to Run the Project
-####1. Prerequisites
+## How to Run the Project
+#### 1. Prerequisites
 Ensure that you have Node.js and npm installed on your system. You can check if you have them installed by running the following commands in your terminal:
 ```bash
 node -v
@@ -67,7 +67,7 @@ npm -v
 ```
 If these commands return a version, you're all set. Otherwise, download and install Node.js from [here](https://nodejs.org/en).
 
-####2. Installation
+#### 2. Installation
 Clone the repository: Download the project from GitHub to your local machine.
 ```bash
 git clone https://github.com/shashank/portfolio.git
@@ -77,7 +77,7 @@ Install dependencies: Run the following command to install all required dependen
 ```bash
 npm install
 ```
-####3. Running the Project Locally
+#### 3. Running the Project Locally
 Once the dependencies are installed, you can start the development server:
 
 ```bash
@@ -85,7 +85,7 @@ npm start
 ```
 The app will run on http://localhost:3000/. Open this URL in your browser to view the website.
 
-####4. Building the Project for Production
+#### 4. Building the Project for Production
 To create an optimized production build of the React app, run:
 
 ```bash
@@ -93,7 +93,7 @@ npm run build
 ```
 This will generate a build/ folder containing the optimized production-ready files.
 
-####5. Deploying to Netlify
+#### 5. Deploying to Netlify
 To deploy this portfolio on Netlify, follow these steps:
 
 Create a Netlify account: If you don't have one already, sign up at Netlify.
@@ -113,12 +113,12 @@ And set the publish directory to:
 Deploy: After configuration, Netlify will automatically build and deploy your site. Your portfolio will be live and hosted on a Netlify subdomain or custom domain if configured.
 You can view the deployed site.
 
-##Features
+## Features
 Responsive Design: Works well on all screen sizes (desktop, tablet, mobile).
 Smooth Scroll and Animations: Elegant scroll animations and smooth transitions between sections.
 Separate Sections: Well-organized sections like About, Projects, Services, Skills, and Contact.
 
-##Tech Stack
+## Tech Stack
 React.js: The core framework used to build this portfolio.
 CSS3: For styling the components.
 Netlify: For deployment.
