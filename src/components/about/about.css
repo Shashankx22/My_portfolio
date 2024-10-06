@@ -1,0 +1,94 @@
+/* About section container styling */
+.about__container {
+    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+    align-items: center; /* Center items vertically within the grid cells */
+    column-gap: 4rem; /* Space between columns */
+}
+
+/* About image styling */
+.about__img {
+    width: 350px; /* Set width of the image */
+    border-radius: 1.5rem; /* Round corners of the image */
+    justify-self: center; /* Center the image horizontally within its grid cell */
+}
+
+/* About info section styling */
+.about__info {
+    grid-template-columns: repeat(3, 140px); /* Create three columns, each 140px wide */
+    gap: 0.5rem; /* Space between grid items */
+    margin-bottom: var(--mb-2); /* Bottom margin from CSS variable */
+}
+
+/* About box styling */
+.about__box {
+    background-color: var(--container-color); /* Background color from CSS variable */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border color */
+    border-radius: 0.75rem; /* Round corners of the box */
+    text-align: center; /* Center text horizontally */
+    padding: 1rem 1.25rem; /* Padding inside the box */
+}
+
+/* About icon styling */
+.about__icon {
+    font-size: 1.5rem; /* Icon font size */
+    color: var(--title-color); /* Icon color from CSS variable */
+    margin-bottom: var(--mb-0-5); /* Margin below the icon from CSS variable */
+}
+
+/* About title styling */
+.about__title {
+    font-size: var(--small-font-size); /* Font size from CSS variable */
+    font-weight: var(--font-medium); /* Font weight from CSS variable */
+}
+
+/* About subtitle styling */
+.about__subtitle {
+    font-size: var(--tiny-font-size); /* Font size from CSS variable */
+}
+
+/* About description styling */
+.about__description {
+    padding: 0 4rem 0 0; /* Padding inside the description area */
+    margin-bottom: var(--mb-2-5); /* Bottom margin from CSS variable */
+}
+
+/* Responsive design for screens up to 992px wide */
+@media screen and (max-width: 992px) {
+    .about__container {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+        row-gap: 2.5rem; /* Space between rows */
+    }
+    .about__img {
+        width: 220px; /* Adjust width of the image */
+    }
+    .about__box {
+        padding: 0.75rem 0.5rem; /* Adjust padding inside the box */
+    }
+    .about__data {
+        text-align: center; /* Center text horizontally */
+    }
+    .about__info {
+        justify-content: center; /* Center items horizontally in the grid */
+    }
+    .about__description {
+        padding: 0.5rem; /* Adjust padding inside the description */
+        margin-bottom: 2rem; /* Adjust bottom margin */
+    }
+}
+
+/* Responsive design for screens up to 576px wide */
+@media screen and (max-width: 576px) {
+    .about__info {
+        grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
+    }
+    .about__description {
+        padding: 0; /* Remove padding inside the description */
+    }
+}
+
+/* Responsive design for very small screens (up to 350px wide) */
+@media screen and (max-width: 350px) {
+    .about__info {
+        grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+    }
+}

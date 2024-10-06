@@ -1,0 +1,129 @@
+/* Main container for Swiper + pagination */
+.projects__wrapper {
+    position: relative;
+    padding-bottom: 40px; /* Space at bottom for pagination */
+  }
+  
+  /* Projects container */
+  .projects__container {
+    width: 800px; 
+    }
+  
+  /* Project card styling */
+  .projects__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: var(--mb-3);
+   }
+  
+  .projects__img {
+    width: 80px;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1);
+  }
+  
+  .projects__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-25);
+  }
+  
+  .projects__description {
+    font-size: var(--small-font-size);
+  }
+  
+  /* Swiper pagination styling */
+  .swiper-pagination {
+    position: absolute;
+    bottom: 0; /* Positioning pagination at the bottom */
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: var(--text-color) !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: var(--title-color) !important;
+  }
+  .projects__modal-icon {
+    color: var(--title-color);
+    font-size: 1.1rem;
+  }
+  /*=============== BREAKPOINTS ===============*/
+  /* For large devices (<= 992px) */
+  @media screen and (max-width: 992px) {
+    .projects__container {
+      width: initial;
+    }
+  
+    .projects__card {
+      padding: 1.25rem 1.5rem;
+    }
+  }
+/* Container for the entire Swiper and pagination */
+.projects__container {
+    width: 800px;
+    height: 430px;
+    margin-bottom: 40px; /* Add margin to ensure space for pagination */
+  }
+  
+  /* Project card styling */
+  .projects__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: var(--mb-3);
+  }
+  
+  .projects__img {
+    width: 80px;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1);
+  }
+  
+  .projects__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-25);
+  }
+  
+  .projects__description {
+    font-size: (--small-font-size);
+  }
+  
+  /* Custom pagination styling */
+  .custom-pagination {
+    display: flex;
+    justify-content: center; /* Center pagination dots */
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: var(--text-color) !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: var(--title-color) !important;
+  }
+  
+  /*=============== BREAKPOINTS ===============*/
+  /* For large devices (<= 992px) */
+  @media screen and (max-width: 992px) {
+    .projects__container {
+      width: initial;
+    }
+  
+    .projects__card {
+      padding: 1.25rem 1.5rem;
+    }
+  }
+    

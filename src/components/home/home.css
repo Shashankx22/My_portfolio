@@ -1,0 +1,186 @@
+/* Home container with space between rows */
+.home__container {
+  row-gap: 7rem; /* Space between rows in the container */
+}
+
+/* Layout for home content */
+.home__content {
+  grid-template-columns: 116px repeat(2, 1fr); /* Define grid columns: one fixed width and two flexible */
+  padding-top: 5.5rem; /* Padding at the top */
+  column-gap: 2rem; /* Space between columns */
+  align-items: center; /* Align items vertically in the center */
+}
+
+/* Social media icons layout */
+.home__social {
+  display: grid; /* Use grid layout */
+  grid-template-columns: max-content; /* One column with content size */
+  row-gap: 1rem; /* Space between rows */
+}
+
+/* Style for social media icons */
+.home__social-icon {
+  font-size: 1.25rem; /* Font size for icons */
+  color: var(--title-color); /* Icon color from CSS variable */
+}
+
+/* Hover effect for social media icons */
+.home__social-icon:hover {
+  color: var(--title-color-dark); /* Darker color on hover */
+}
+
+/* Title styling */
+.home__title {
+  font-size: var(--big-font-size); /* Font size from CSS variable */
+  margin-bottom: var(--mb-0-25); /* Bottom margin */
+}
+
+/* Subtitle styling */
+.home__subtitle {
+  position: relative; /* Position relative for the ::before pseudo-element */
+  font-size: var(--h3-font-size); /* Font size from CSS variable */
+  padding-left: 5rem; /* Left padding */
+  font-weight: var(--font-normal); /* Font weight from CSS variable */
+  margin-bottom: var(--mb-1); /* Bottom margin */
+}
+
+/* Decoration for subtitle using ::before pseudo-element */
+.home__subtitle::before {
+  content: ""; /* Empty content to create a line */
+  position: absolute; /* Absolute positioning relative to subtitle */
+  width: 70px; /* Line width */
+  height: 1px; /* Line height */
+  background-color: var(--text-color); /* Line color from CSS variable */
+  left: 0; /* Position line at the left edge */
+  top: 1rem; /* Position line below the subtitle text */
+}
+  
+
+/* Description styling */
+.home__description {
+  max-width: 400px; /* Maximum width for the description */
+  margin-bottom: var(--mb-3); /* Bottom margin */
+}
+
+/* Styling for the profile image */
+.home__img {
+  background: url(/Users/shashankbr/Downloads/portfolio/src/assets/demo00.jpeg); /* Background image */
+  background-repeat: no-repeat; /* Prevent repeating of the image */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Cover the area with the image */
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%); /* Inset shadow effect */
+  order: 1; /* Order in the flex container */
+  justify-self: center; /* Center image horizontally within its grid cell */
+  width: 300px; /* Image width */
+  height: 300px; /* Image height */
+  animation: profile__animate 8s ease-in-out infinite 1s; /* Animation for border-radius change */
+}
+
+/* Animation for the profile image */
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; /* Initial border-radius */
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%; /* Midway border-radius */
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; /* End border-radius, same as initial */
+  }
+}
+
+/* Scroll animation */
+.home__scroll {
+  margin-left: 9.25rem; /* Margin on the left */
+}
+
+/* Animation for scroll icon */
+.wheel {
+  animation: scroll 2s ease infinite; /* Infinite scrolling animation */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateY(0); /* Initial position */
+  }
+  30% {
+    transform: translateY(3.75rem); /* Move down */
+  }
+}
+
+/* Scroll name styling */
+.home__scroll-name {
+  color: var(--title-color); /* Text color from CSS variable */
+  font-weight: var(--font-medium); /* Font weight from CSS variable */
+  margin-right: var(--mb-0-25); /* Right margin */
+  margin-left: 2px; /* Left margin */
+}
+
+/* Scroll arrow styling */
+.home__scroll-arrow {
+  font-size: 1.25rem; /* Font size for arrow */
+  color: var(--title-color); /* Arrow color from CSS variable */
+}
+
+/* Responsive design for screens up to 992px */
+@media screen and (max-width: 992px) {
+  .home__content {
+    grid-template-columns: 100px repeat (2, 1fr); /* Adjust grid columns */
+    column-gap: 1.25rem; /* Adjust column gap */
+  }
+  .home__subtitle {
+    padding-left: 3.75rem; /* Reduce left padding */
+    margin-bottom: var(--mb-1); /* Adjust bottom margin */
+  }
+  .home__subtitle::before {
+    width: 42px; /* Shorter line width */
+    top: 0.8rem; /* Adjust vertical position */
+  }
+  
+  
+  .home__description {
+    max-width: initial; /* Remove maximum width */
+    margin-bottom: var(--mb-2-5); /* Adjust bottom margin */
+  }
+  .home__img {
+    width: 250px; /* Reduce width */
+    height: 250px; /* Reduce height */
+    box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%); /* Adjust shadow */
+  }
+  .home__scroll {
+    margin-left: 7.5rem; /* Reduce left margin */
+  }
+}
+
+/* Responsive design for medium devices (up to 768px) */
+@media screen and (max-width: 768px) {
+  .home__content {
+    grid-template-columns: 0.5fr 3fr; /* Adjust grid columns */
+    padding-top: 3.5rem; /* Reduce top padding */
+  }
+  .home__img {
+    order: initial; /* Reset order */
+    justify-self: initial; /* Reset horizontal alignment */
+  }
+  .home__data {
+    grid-column: 1/3; /* Span across two columns */
+  }
+  .home__img {
+    box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%); /* Adjust shadow */
+    width: 200px; /* Reduce width */
+    height: 200px; /* Reduce height */
+  }
+  .home__scroll {
+    display: none; /* Hide scroll element */
+  }
+  
+}
+
+/* Responsive design for small devices (up to 350px) */
+@media screen and (max-width: 350px) {
+  .home__img {
+    width: 180px; /* Further reduce width */
+    height: 180px; /* Further reduce height */
+  }
+}

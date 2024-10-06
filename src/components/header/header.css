@@ -1,0 +1,133 @@
+/* Header styling */
+.header {
+  width: 100%; /* Full width of the viewport */
+  position: fixed; /* Fixed position to stay at the top */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
+  z-index: var(--z-fixed); /* High z-index to ensure it stays above other elements */
+  background-color: var(--body-color); /* Background color from CSS variable */
+}
+
+/* Navigation bar styling */
+.nav {
+  height: calc(var(--header-height) + 1.5rem); /* Height of the navigation bar */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  column-gap: 1rem; /* Space between columns */
+}
+
+/* Styling for logo and toggle button */
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color); /* Text color from CSS variable */
+  font-weight: var(--font-medium); /* Font weight from CSS variable */
+}
+
+/* Navigation list styling */
+.nav__list {
+  display: flex; /* Flexbox for layout */
+  column-gap: 2rem; /* Space between list items */
+}
+
+/* Navigation link styling */
+.nav__link {
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  font-size: var(--small-font-size); /* Font size from CSS variable */
+  color: var(--title-color); /* Text color from CSS variable */
+  font-weight: var(--font-medium); /* Font weight from CSS variable */
+  transition: 0.3s; /* Smooth transition effect */
+}
+
+/* Icons and close button styling (hidden by default) */
+.nav__icon,
+.nav__close,
+.nav__toggle {
+  display: none; /* Hide elements */
+}
+
+/* Active link and hover effect */
+.active-link,
+.nav__link:hover {
+  color: var(--title-color-dark); /* Darker color for active or hovered links */
+}
+
+/* Responsive design for screens up to 768px */
+@media screen and (max-width: 768px) {
+  .header {
+    top: initial; /* Reset top position */
+    bottom: 0; /* Align header to the bottom of the viewport */
+  }
+  .nav {
+    height: var(--header-height); /* Adjust height */
+  }
+
+  /* Navigation menu styling for mobile */
+  .nav__menu {
+    position: fixed; /* Fixed position to overlay the viewport */
+    bottom: -100%; /* Initially hide menu off-screen */
+    left: 0; /* Align to the left of the viewport */
+    width: 100%; /* Full width of the viewport */
+    background-color: var(--body-color); /* Background color from CSS variable */
+    padding: 2rem 1.5rem 4rem; /* Padding inside the menu */
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15); /* Shadow effect */
+    border-radius: 1.5rem 1.5rem 0 0; /* Rounded top corners */
+    transition: 0.3s; /* Smooth transition effect */
+  }
+
+  /* Show menu when active */
+  .show-menu {
+    bottom: 0; /* Move menu into view */
+  }
+
+  .nav__list {
+    display: grid; /* Grid layout for mobile */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 2rem; /* Gap between grid items */
+  }
+
+  /* Icon styling */
+  .nav__icon {
+    font-size: 1.2rem; /* Icon font size */
+  }
+
+  /* Close button styling */
+  .nav__close {
+    position: absolute; /* Absolute positioning */
+    bottom: 0.4rem; /* Position close button near the bottom */
+    right: 1.3rem; /* Position close button near the right edge */
+    font-size: 1.5rem; /* Font size for the close button */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: var(--title-color); /* Text color from CSS variable */
+  }
+
+  /* Hover effect for close button */
+  .nav__close:hover {
+    color: var(--title-color-dark); /* Darker color on hover */
+  }
+
+  /* Toggle button styling */
+  .nav__toggle {
+    font-size: 1.1rem; /* Font size for the toggle button */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+
+  /* Show icons and buttons on mobile */
+  .nav__icon,
+  .nav__close,
+  .nav__toggle {
+    display: block; /* Display icons and buttons */
+  }
+}
+
+/* Responsive design for very small screens (up to 350px) */
+@media screen and (max-width: 350px) {
+  .nav__menu {
+    padding: 2rem 0.25rem 4rem; /* Adjust padding for very small screens */
+  }
+  .nav__icon {
+    font-size: 1.2rem; /* Adjust icon font size */
+  }
+}

@@ -1,0 +1,105 @@
+.skills__container {
+  grid-template-rows: repeat(5, 300px);
+  grid-template-rows: max-content;
+  row-gap: 3rem;
+  justify-content: center;
+}
+.skills__content {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1.25rem;
+  padding: 2rem 4rem;
+}
+.skills__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
+}
+ 
+
+ .skills__list{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  column-gap: 5rem;
+  row-gap: 3rem;
+ }
+
+ .skills__icon {
+ font-size: 5rem;
+ align-self: center;
+ color: var(--title-color);
+
+}
+  
+.skills__icon__svg {
+  height: 80px;
+  width: 80px;
+  align-self: center;
+  }
+h3{
+  color : var(--text-color);
+  align-self: center;
+  font-weight: var(--font-normal);
+  font-size: var(--small-font-size);
+}
+.skills__logo{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  }
+
+/* .skills__logo:hover{
+  .skills__icon{
+    color: var(--title-color);
+  }
+  h3{
+    color: var(--title-color);
+  }
+} */
+/*=============== BREAKPOINTS ===============*/
+/* For large devices (<= 992px) */
+@media screen and (max-width: 992px) {
+   .skills__container{
+    grid-template-row: max-content;
+    row-gap: 2rem;
+   }
+   
+  }
+  
+  /* For medium devices (<= 768px) */
+  @media screen and (max-width: 768px) {
+    .skills__container{
+        grid-template-row: 1fr;
+    }
+    .skills__content{
+        padding: 1.5rem;
+    }
+    .skills__list{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 5rem;
+      row-gap: 3rem;
+     }
+     .skills__content{
+      margin-left: 2rem;
+      margin-right: 2rem;
+     }
+  
+  }
+  
+  /* For small devices (<= 350px) */
+  @media screen and (max-width: 350px) {
+    .skills__list{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      column-gap: 5rem;
+      row-gap: 3rem;
+     }
+     .skills__content{
+      margin-left: 2rem;
+      margin-right: 2rem;
+     }
+  }
+  
+ 
