@@ -96,11 +96,9 @@ This will generate a build/ folder containing the optimized production-ready fil
 #### 5. Deploying to Netlify
 To deploy this portfolio on Netlify, follow these steps:
 
-Create a Netlify account: If you don't have one already, sign up at Netlify.
-
-Link the GitHub repository: Once signed in, go to "New site from Git" and select your portfolio's GitHub repository.
-
-Configure settings: In the build settings, set the build command to:
+1. Create a Netlify account: If you don't have one already, sign up at Netlify.
+2. Link the GitHub repository: Once signed in, go to "New site from Git" and select your portfolio's GitHub repository.
+3. Configure settings: In the build settings, set the build command to:
 
 ```bash
 npm run build
@@ -110,8 +108,8 @@ And set the publish directory to:
 ```bash
  build
 ```
-Deploy: After configuration, Netlify will automatically build and deploy your site. Your portfolio will be live and hosted on a Netlify subdomain or custom domain if configured.
-You can view the deployed site.
+4. Deploy: After configuration, Netlify will automatically build and deploy your site. Your portfolio will be live and hosted on a Netlify subdomain or custom domain if configured.
+
 
 ## Features
 1. Responsive Design: Works well on all screen sizes (desktop, tablet, mobile).
