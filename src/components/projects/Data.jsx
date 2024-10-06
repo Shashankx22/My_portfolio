@@ -1,4 +1,3 @@
-import React from 'react'
 import demo2 from "../../assets/demo1.jpeg"
 import demo1 from "../../assets/demo2.jpeg"
 

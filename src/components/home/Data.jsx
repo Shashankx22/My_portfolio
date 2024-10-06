@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Data = () => {
   return (
     // Container for the component's data
