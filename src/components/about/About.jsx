@@ -1,7 +1,7 @@
 import React from 'react';
 import "./about.css"; // Import the CSS file for styling
-import AboutImg from "/Users/shashankbr/Downloads/All_Projects/portfolio/src/assets/my_data/demo00.jpeg"; // Import the image for the about section
-import CV from "/Users/shashankbr/Downloads/All_Projects/portfolio/src/assets/my_data/shash_resume.pdf"; // Import the CV file for download
+import AboutImg from "../../assets/my_data/demo00.jpeg"; // Import the image for the about section
+import CV from "../../assets/my_data/shash_resume.pdf"; // Import the CV file for download
 import Info from './Info'; // Import the Info component
 
 const About = () => {
