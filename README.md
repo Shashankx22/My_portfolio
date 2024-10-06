@@ -114,12 +114,12 @@ Deploy: After configuration, Netlify will automatically build and deploy your si
 You can view the deployed site.
 
 ## Features
-Responsive Design: Works well on all screen sizes (desktop, tablet, mobile).
-Smooth Scroll and Animations: Elegant scroll animations and smooth transitions between sections.
-Separate Sections: Well-organized sections like About, Projects, Services, Skills, and Contact.
+1. Responsive Design: Works well on all screen sizes (desktop, tablet, mobile).
+2. Smooth Scroll and Animations: Elegant scroll animations and smooth transitions between sections.
+3. Separate Sections: Well-organized sections like About, Projects, Services, Skills, and Contact.
 
 ## Tech Stack
-React.js: The core framework used to build this portfolio.
-CSS3: For styling the components.
-Netlify: For deployment.
+1. React.js: The core framework used to build this portfolio.
+2. CSS3: For styling the components.
+3. Netlify: For deployment.
 
