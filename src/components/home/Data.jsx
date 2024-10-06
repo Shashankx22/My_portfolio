@@ -1,6 +1,3 @@
-import React from 'react';
-
-// Define a functional component named Data
 const Data = () => {
   return (
     // Container for the component's data

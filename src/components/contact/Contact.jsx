@@ -29,7 +29,7 @@ const Contact = () => {
                 <h3 className='contact__card-title'>Email</h3>
                 <span className='contact__card-data'>shashankrajashekar22@gmail.com</span>
                 <a href="mailto:shashankrajashekar22@gmail.com
-                      ?subject=Subject%20Here" className='contact__button' target='_blank'>Write me {""}
+                      ?subject=Subject%20Here" className='contact__button' target='_blank' rel='noreferrer'>Write me {""}
                 <i className='bx bx-right-arrow-alt contact__button-icon'></i>
 
                 </a>
@@ -40,7 +40,7 @@ const Contact = () => {
                 <h3 className='contact__card-title'>Whatsapp</h3>
                 <span className='contact__card-data'>9019054196</span>
 
-                <a href='https://wa.me/9019054196?text=Hello%20there%21' className='contact__button' target='_blank'>Write me{""} 
+                <a href='https://wa.me/9019054196?text=Hello%20there%21' className='contact__button' target='_blank' rel='noreferrer'>Write me{""} 
                   <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                 </a>
               </div>
@@ -49,7 +49,7 @@ const Contact = () => {
                 <h3 className='contact__card-title'>SMS</h3>
                 <span className='contact__card-data'>9019054196</span>
 
-                <a href="sms:+9019054196&body=Hello%20there" className='contact__button' target='_blank'>Write me{""} 
+                <a href="sms:+9019054196&body=Hello%20there" className='contact__button' target='_blank' rel='noreferrer'>Write me{""} 
                   <i className='bx bx-right-arrow-alt contact__button-icon'></i>
                 </a>
               </div>

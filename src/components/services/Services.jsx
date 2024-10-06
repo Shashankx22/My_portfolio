@@ -24,8 +24,7 @@ const Services = () => {
                   <div className='services__modal-content'>
                     <i onClick={()=> toggleTab(0)} className='uil uil-times services__modal-close'></i>
 
-                    <h3 className='services__modal-title'></h3>
-                    <p className='services__modal-description'>
+                     <p className='services__modal-description'>
                     I specialize in crafting visually appealing, user-centric websites that deliver seamless user experiences. My approach to web design focuses on understanding user behavior and creating intuitive interfaces that enhance usability, ensuring both aesthetics and functionality are prioritized.                    </p>
 
                       <ul className='services__modal-services grid'>
@@ -84,7 +83,6 @@ const Services = () => {
                   <div className='services__modal-content'>
                     <i onClick={()=> toggleTab(0)} className='uil uil-times services__modal-close'></i>
 
-                    <h3 className='services__modal-title'></h3>
                     <p className='services__modal-description'>
                     I specialize in building machine learning models that solve complex problems. My approach focuses on leveraging data and algorithms to automate processes, optimize performance, and drive predictive insights, making solutions smarter and more efficient.
 
@@ -146,7 +144,6 @@ const Services = () => {
                 <div className={toggleState===3? "services__modal active-modal" :"services__modal"}>
                   <div className='services__modal-content'>
                     <i onClick={()=> toggleTab(0)} className='uil uil-times services__modal-close'></i>
-                    <h3 className='services__modal-title'></h3>
                     <p className='services__modal-description'>
                     I create data-driven solutions by analyzing and interpreting large datasets. My approach focuses on uncovering actionable insights that inform decision-making, helping businesses harness the power of data for growth and optimization.
 
@@ -206,7 +203,6 @@ const Services = () => {
                 <div className={toggleState===4? "services__modal active-modal" :"services__modal"}>
                   <div className='services__modal-content'>
                     <i onClick={()=> toggleTab(0)} className='uil uil-times services__modal-close'></i>
-                    <h3 className='services__modal-title'></h3>
                     <p className='services__modal-description'>
                     I design advanced deep learning systems that drive innovation in AI. My approach centers on developing neural networks that excel at tasks like image and text recognition, pushing the boundaries of machine intelligence.</p>
                       <ul className='services__modal-services grid'>
@@ -264,7 +260,6 @@ const Services = () => {
                   <div className='services__modal-content'>
                     <i onClick={()=> toggleTab(0)} className='uil uil-times services__modal-close'></i>
 
-                    <h3 className='services__modal-title'></h3>
                     <p className='services__modal-description'>
                     I develop AI-powered applications that enhance automation and intelligence. My approach integrates AI into systems to optimize efficiency, enabling smarter, more intuitive operations that evolve with user needs.</p>
 
@@ -324,7 +319,6 @@ const Services = () => {
                   <div className='services__modal-content'>
                     <i onClick={()=> toggleTab(0)} className='uil uil-times services__modal-close'></i>
 
-                    <h3 className='services__modal-title'></h3>
                     <p className='services__modal-description'>
                     I design user-friendly and visually appealing interfaces that prioritize a seamless user experience. My approach focuses on intuitive navigation and clean design, ensuring users can engage effortlessly with products and services.
 
